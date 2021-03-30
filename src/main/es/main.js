@@ -45,6 +45,18 @@ export const rpn = {
         rpn.additions(
           digits_array[digit_index] + " " + digits_array[digit_index + 1] + " +"
         );
+      if (tmp == "-")
+        rpn.subtractions(
+          digits_array[digit_index] + " " + digits_array[digit_index + 1] + " -"
+        );
+      if (tmp == "*")
+        rpn.multiplications(
+          digits_array[digit_index] + " " + digits_array[digit_index + 1] + " *"
+        );
+      if (tmp == "/")
+        rpn.divisions(
+          digits_array[digit_index] + " " + digits_array[digit_index + 1] + " /"
+        );
       digit_index += 2;
     }
   }
