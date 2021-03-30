@@ -18,6 +18,18 @@ export const fizzBuzzer = {
   },
 
   fizzFizz(number) {
-    return /*your code here*/ undefined;
+    let result = number;
+    //for (let i = 0; number[i]; i++) {
+    if (number == 3) {
+      result = "FIZZ";
+    }
+    if (number % 3 == 0) {
+      if (result == number) {
+        result = "";
+      }
+      result += "FIZZ";
+    }
+    //}
+    return result;
   }
 };
